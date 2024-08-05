@@ -70,8 +70,8 @@ class LoginFrame(Frame):
                                 self.data.set('Connecting')
                                 self.after(2000, self.show_finished_screen)
                         except IOError as e:
-                            print("Error writing to file:", e)
-                    # Handle the error, e.g., show an error message to the user
+                           
+                   
                        
                         # Clear input fields after successful addition
                         self.name.delete(0,END)
@@ -85,11 +85,12 @@ class LoginFrame(Frame):
                 for widget in self.winfo_children():
                     widget.grid_remove()
 
-        # Display the "Connect Duccessfully" message
+        # Display the "Connect Successfully" message
                 finished_label = Label(self, text="Connected Successfully", font=('Helvetica', 12, 'bold'))
                 image_label = Label(self, image=self.image)
                 self.image_label.grid(row=1, column=0)
                 finished_label.grid(row=0, column=0, padx=10, pady=10)
+                self.after(2000, self.quit)
 
 
                
