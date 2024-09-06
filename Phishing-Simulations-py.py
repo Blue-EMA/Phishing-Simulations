@@ -97,7 +97,13 @@ class LoginFrame(Frame):
 
 #driver Code              
 root = Tk()
-root.geometry('350x150')
+w = 350
+h = 150
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+x_pos = screen_width - 350 - 10
+y_pos = screen_height - 150 - 70
+root.geometry(f"{w}x{h}+{x_pos}+{y_pos}")
 root.iconbitmap('gov.ico')
 Frame = LoginFrame(root)
 root.title('Organization VPN | User')
