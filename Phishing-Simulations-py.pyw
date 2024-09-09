@@ -89,7 +89,7 @@ class LoginFrame(Frame):
                 image_label = Label(self, image=self.image)
                 self.image_label.grid(row=1, column=0)
                 finished_label.grid(row=0, column=0, padx=10, pady=10)
-                self.after(2000, self.quit())
+                self.after(2000, self.master.destroy)
 
 
                
