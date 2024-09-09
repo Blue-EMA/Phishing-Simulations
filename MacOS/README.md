@@ -5,17 +5,15 @@
 This as a jumpoff to make a phishing simulation in your enterprise.
 ## Requirements
 
-To run this project, you need to have the following installed:
+To run this project on macOS, you need to have the following installed:
 
 ### Python
-- [Python 3.x](https://www.python.org/downloads/) (Make sure to download the latest version)
-- brew install python
+```bash
+   brew install python
 
 ### Tkinter
-- Tkinter should be installed
-- brew install python-tk
-- To verify if Tkinter is installed, you can run the following command in your Python environment:
+Tkinter is usually included with standard Python installations on macOS. However, if you need to install or upgrade it, you have several options:
 
-```python
-import tkinter
-tkinter._test()
+1. Using pip (recommended for most users):
+   ```bash
+   brew install python-tk
