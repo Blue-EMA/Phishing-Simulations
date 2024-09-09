@@ -1,7 +1,7 @@
 from datetime import datetime
 from tkinter import *
 import socket
-
+import os
 class LoginFrame(Frame):
         def __init__(self, root):
                 Frame.__init__(self,root)
@@ -101,11 +101,10 @@ w = 350
 h = 150
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
-x_pos = screen_width - 350 - 10
-y_pos = screen_height - 150 - 70
+x_pos = screen_width - w
+y_pos = -screen_height - h 
 root.geometry(f"{w}x{h}+{x_pos}+{y_pos}")
-root.iconbitmap('gov.ico')
 Frame = LoginFrame(root)
-root.title('Organization VPN | User')
+root.title('Organization VPN -- User')
 Frame.pack()
 root.mainloop()
