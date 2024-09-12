@@ -19,3 +19,8 @@ Using pip (recommended for most users)
 ```bash
    brew install python-tk
 ```
+## Run Program
+```bash
+   cd MacOS
+   python3 Phish-Mac.pyw
+```
