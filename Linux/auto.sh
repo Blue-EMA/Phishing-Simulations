@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file="Phishing-Simulations-MacOS.pyw"
+file="Phishing-Simulations-Linux.pyw"
 
 # Find the directory containing the file
 dir=$(dirname "$(find ~ -name "$file" 2>/dev/null)")
